@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+:root{
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+body{
+	height:  3000px;
+}
+*{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif; 
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+@media (min-width: 768px) {
+	.modal-popupContact .modal-dialog-centered{width:650px;}
+}
+@media (max-width: 767px) {
+	.modal-popupContact .modal-dialog-centered{margin:35px 10px 50px;}
+	.modal-popupContact.popupForm .modal-content:before, 
+	.modal-popupContact.popupForm .modal-content .modal-wrapper-contact{width:100%;}
+}
+@media screen and (max-width: 768px) {
+	.footer-block {
+		margin-bottom: 30px;
+	}
+	header.container {
+		margin-top: 40px;
+	}
+}
+
+/* end Add style mobile menu ***/
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+	.col-5 {
+		width: 20%;
+	}
+}
