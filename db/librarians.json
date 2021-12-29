@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "61c9799c0e7d99d599793925"
+  },
+  "name": "Nguyễn Quốc Bằng",
+  "CMND": "079200009203",
+  "phone_number": "0909862461",
+  "gender": true,
+  "birthday": "01/01/2000",
+  "email": "ngqbangds@gmail.com",
+  "address": "TPHCM",
+  "password": "123456"
+}]

@@ -1,0 +1,22 @@
+ul {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    margin-top: 4rem;
+    width: 800px;
+    background-color: #01a14b;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    color: black;
+  }

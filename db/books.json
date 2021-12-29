@@ -1,0 +1,774 @@
+[{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a01"
+  },
+  "name": "OVERLORD - 5 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 12,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_5__ln__-_bia1_a3473e6167824ae4b0203ed64cbe52e1_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a02"
+  },
+  "name": "DURARARA!! - 1",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a04"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "DURARARA "
+  ],
+  "status": "new",
+  "number_of_borrowed": 22,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/durarara_1_-_bia_1_f082f44c237e4879a41a80abb2547d29_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a03"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 4",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 14,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_4_-_bia_1_c7276e4d5ac145bbbb7c0a8dadfff666_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a04"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 3",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_3_-_bia_1_7db79365b18b4235b092013c7db95264_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a05"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 2",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 13,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_2_-_bia1_0dd14ae892d045fb8fafe4a7d2c4d003_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a06"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 1",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_1_-_bia1_c9e69acee53640b592f8effd072d1668_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a07"
+  },
+  "name": "FASHION STYLIST - VÉN MÀN HẬU TRƯỜNG CỦA NHỮNG BƯỚC CHÂN 4.0",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a05"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "CAREER",
+    "PSYCHOLOGY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 21,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/fashion-stylist_bia_e469592b3e654135bc8f324f490f735f_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a08"
+  },
+  "name": "DÙ BÌNH THƯỜNG NHƯNG BẠN LÀ ĐỘC BẢN",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a06"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "NOVEL",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 5,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/du-binh-thuong-nhung-ban-la-doc-ban_bia_b7f7951274424347aa0130c47bfa08cc_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a09"
+  },
+  "name": "HARRY POTTER - DIAGON ALLEY",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a07"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a06"
+  },
+  "publish_year": "2018",
+  "buy_year": "2020",
+  "tag": [
+    "NOVEL",
+    "HARRY POTTER"
+  ],
+  "status": "old",
+  "number_of_borrowed": 37,
+  "state": true,
+  "picture": "https://cdn-amz.fadoglobal.io/images/I/81CsIgSVS6L.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a10"
+  },
+  "name": "HARR POTTER AND THE PHILOSOPHER'S STONE RAVENCLAW EDITION - HARDBACK",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a08"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a06"
+  },
+  "publish_year": "2017",
+  "buy_year": "2020",
+  "tag": [
+    "NOVEL",
+    "HARRY POTTER"
+  ],
+  "status": "old",
+  "number_of_borrowed": 39,
+  "state": true,
+  "picture": "https://images-na.ssl-images-amazon.com/images/I/81-rzeMhDgL.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a11"
+  },
+  "name": "TÂM LÝ HỌC",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a09"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a04"
+  },
+  "publish_year": "2019",
+  "buy_year": "2020",
+  "tag": [
+    "PSYCHOLOGY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 4,
+  "state": true,
+  "picture": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/i/m/image_189077.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a12"
+  },
+  "name": "NHÀ GIẢ KIM",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a10"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a05"
+  },
+  "publish_year": "2020",
+  "buy_year": "2020",
+  "tag": [
+    "NOVEL"
+  ],
+  "status": "new",
+  "number_of_borrowed": 6,
+  "state": true,
+  "picture": "https://isach.info/images/story/cover/nha_gia_kim__paulo_coelho.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a13"
+  },
+  "name": "TRẠI HOA VÀNG",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a11"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a07"
+  },
+  "publish_year": "1994",
+  "buy_year": "2020",
+  "tag": [
+    "NOVEL"
+  ],
+  "status": "old",
+  "number_of_borrowed": 31,
+  "state": false,
+  "picture": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_25482013_034817.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a14"
+  },
+  "name": "DORAEMON - NOBITA VÀ CUỘC ĐẠI THỦY CHIẾN Ở XỨ SỞ NGƯỜI CÁ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a12"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2020",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/xu-so-nguoi-ca_layout-1_b6d886d952d3443e87786f1d601933da_57da40fc504c41daa8d880ae8b502e10_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a15"
+  },
+  "name": "DR. STONE - TẬP 10",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a13"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "SCIENCE"
+  ],
+  "status": "new",
+  "number_of_borrowed": 25,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/10_f17f0be2eb6f4918b856977b24c178f1_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a16"
+  },
+  "name": "ĐỘI QUÂN NHÍ NHỐ - TẬP 32",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a14"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 19,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/32_99f3aa7713d54dd188cdadf0a5126764_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a17"
+  },
+  "name": "HỘI CHỨNG TUỔI THANH XUÂN - TẬP 5",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a15"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 7,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/5_a5a54f6599674feb8e41011be2296076_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a18"
+  },
+  "name": "ONE PIECE",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a16"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 16,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/97_c68958fa871b4695b4509282a03a3f87_master.jpg"
+},{
+  "_id": {
+    "$oid": "61bc7d428fe0030df8b29a19"
+  },
+  "name": "HOÀNG TỬ BÉ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a17"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "NOVEL",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 23,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000343865/product/hoang-tu-be_bia_70c1f285d8484f0292800a102ed7901f.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b01"
+  },
+  "name": "OVERLORD - 4 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 8,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_4__ln__f8aad5451ddb4f1484fb16d68c8c4b98_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b02"
+  },
+  "name": "OVERLORD - 3 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 13,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_3__ln__e4931f1f4a294f158e8ddeb7179cd468_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b03"
+  },
+  "name": "OVERLORD - 2 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_2__ln__51a546428a034d4c9048584188b920df_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b04"
+  },
+  "name": "OVERLORD - 1",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2020",
+  "buy_year": "2020",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 9,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_1__ln__a45a2c379bfe4eb9b2b736596088f5fd_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b05"
+  },
+  "name": "OVERLORD - 5 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 16,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_5__ln__-_bia1_a3473e6167824ae4b0203ed64cbe52e1_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b06"
+  },
+  "name": "OVERLORD - 4 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 12,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_4__ln__f8aad5451ddb4f1484fb16d68c8c4b98_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b07"
+  },
+  "name": "OVERLORD - 3 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 17,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_3__ln__e4931f1f4a294f158e8ddeb7179cd468_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b08"
+  },
+  "name": "OVERLORD - 2 ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "new",
+  "number_of_borrowed": 14,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_2__ln__51a546428a034d4c9048584188b920df_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b09"
+  },
+  "name": "OVERLORD - 1",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a01"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2020",
+  "buy_year": "2020",
+  "tag": [
+    "LIGHT NOVEL",
+    "ISEKAI",
+    "MARUYAMA KUGANE",
+    "OVERLORD"
+  ],
+  "status": "old",
+  "number_of_borrowed": 33,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_1__ln__a45a2c379bfe4eb9b2b736596088f5fd_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b10"
+  },
+  "name": "ĐỨA CON CỦA THỜI TIẾT",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a03"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a02"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "LIGHT NOVEL",
+    "FICTION"
+  ],
+  "status": "new",
+  "number_of_borrowed": 15,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/overlord_1__ln__a45a2c379bfe4eb9b2b736596088f5fd_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b11"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 4",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 14,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_4_-_bia_1_c7276e4d5ac145bbbb7c0a8dadfff666_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b12"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 3",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_3_-_bia_1_7db79365b18b4235b092013c7db95264_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b13"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 2",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 13,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_2_-_bia1_0dd14ae892d045fb8fafe4a7d2c4d003_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b14"
+  },
+  "name": "XƯỞNG PHÉP THUẬT - 1",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a02"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a01"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMIC"
+  ],
+  "status": "new",
+  "number_of_borrowed": 11,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000287623/product/xuong_phep_thuat_1_-_bia1_c9e69acee53640b592f8effd072d1668_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b15"
+  },
+  "name": "CHẠY TRỜI KHÔNG KHỎI ĐAU",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a19"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "TEENAGER"
+  ],
+  "status": "new",
+  "number_of_borrowed": 17,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000343865/product/chay-troi-khong-khoi-dau_bia-1_5335e3e87fea484f93970324ed297aec_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b16"
+  },
+  "name": "TỪ NHỮNG HẠT MẦM - CHUỘT ĐỒNG MÊ LÚA",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a18"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "CHILDREN",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 6,
+  "state": false,
+  "picture": "https://product.hstatic.net/200000343865/product/chuot-dong-me-lua_436f1fc6db354c13a1d9d3d9f9544b3b_master.jpg"
+},{
+  "_id": {
+    "$oid": "61cbf7a4f1cd4b0b12336b17"
+  },
+  "name": "VUA SÁNG CHẾ",
+  "author": {
+    "$oid": "61cbf56df1cd4b0b12336a20"
+  },
+  "publishing_house": {
+    "$oid": "61cbf49af1cd4b0b12336a03"
+  },
+  "publish_year": "2021",
+  "buy_year": "2021",
+  "tag": [
+    "MANGA",
+    "COMEDY"
+  ],
+  "status": "new",
+  "number_of_borrowed": 16,
+  "state": true,
+  "picture": "https://product.hstatic.net/200000343865/product/1_7cb5faf4990f4eedb7f11248d0bc8c9f_master.jpg"
+}]

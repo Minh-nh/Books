@@ -4,10 +4,10 @@ import connectDB from "./config/db.js";
 import Cors from 'cors';
 import bodyParser from "body-parser"
 
-// import orderRoutes from "./routes/orderRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
-// import trademarkRoutes from "./routes/trademarkRoutes.js";
-// import userRoutes from "./routes/userRoutes.js";
+import librarianRoutes from "./routes/librarianRoutes.js"
+import pubshingHouseRoutes from "./routes/publishingHouseRoutes.js"
+import authorRoutes from "./routes/authorRoutes.js"
 
 dotenv.config();
 
@@ -28,10 +28,10 @@ app.get("/", (req, res) => {
 });
 
 // Dùng route ở đây
-// app.use("/api/orders", orderRoutes)
 app.use("/api/products", productRoutes)
-// app.use("/api/trademarks", trademarkRoutes)
-// app.use("/api/users", userRoutes)
+app.use("/api/librarians", librarianRoutes)
+app.use("/api/publishing_houses", pubshingHouseRoutes)
+app.use("/api/authors", authorRoutes)
 
 const PORT = process.env.PORT || 5000;
 

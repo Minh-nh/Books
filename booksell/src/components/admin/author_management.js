@@ -3,27 +3,26 @@ import { Row, Button, Table, Container, Card } from 'react-bootstrap';
 import { FaEdit } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import axios from "axios";
-import DeleteProductNotification from '../home/notification/delete_product_notification';
 import SideBarManagement from '../home/sidebar/sidebar_management';
+import DeleteAuthorNotification from '../home/notification/delete_author_notification';
 import ReactPaginate from 'react-paginate';
-class LibaryManagement extends Component {
+class AuthorManagement extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            products: [],
+            authors: [],
             offset: 0,
             orgtableData: [],
-            perPage: 10,
+            perPage: 20,
             currentPage: 0
-
         }
     }
 
     componentDidMount() {
         axios({
             method: 'GET',
-            url: 'http://localhost:5000/api/products',
+            url: 'http://localhost:5000/api/authors',
             data: null
         }).then(res => {
             var tdata = res.data;
@@ -31,7 +30,7 @@ class LibaryManagement extends Component {
             this.setState({
                 pageCount: Math.ceil(tdata.length / this.state.perPage),
                 orgtableData: tdata,
-                products: slice
+                authors: slice
             })
         }).catch(err => {
             console.log(err);
@@ -57,50 +56,26 @@ class LibaryManagement extends Component {
         const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
         this.setState({
             pageCount: Math.ceil(data.length / this.state.perPage),
-            products: slice
+            authors: slice
         })
 
     }
 
-    showTag(tags) {
-        var result = "";
-        if (tags.length > 0) {
-            result = tags.map((tag, index) => {
-                if (index != tags.length - 1) {
-                    return tag + ", "
-                } else {
-                    return tag
-                }
-            })
-        }
-
-        return result
-    }
-
-    showProducts(products) {
+    showAuthors(authors) {
         var result = null;
-        if (products.length > 0) {
-            result = products.map((product, index) => {
+        if (authors.length > 0) {
+            result = authors.map((author, index) => {
                 return (
                     <tr>
-                        <td>
-                            <img src={product.picture} width="100px" height="100px" />
-                        </td>
-                        <td>{product.name}</td>
-                        <td>{product.author?.name}</td>
-                        <td>{product.publishing_house?.name}</td>
-                        <td>{product.publish_year}</td>
-                        <td>{product.buy_year}</td>
-                        <td>{this.showTag(product.tag)}</td>
-                        <td>{product.status}</td>
-                        <td>{product.number_of_borrowed}</td>
-                        <td>{product.state ? "Có sẵn" : "Đã mượn"}</td>
-
+                        <td>{author.name}</td>
+                        <td>{author.description}</td>
+                        <td>{author.email}</td>
+                        <td>{author.phone}</td>
                         <td style={{ display: 'flex', justifyContent: 'space-around' }}>
-                            <Link to={"/admin/product/" + product._id}>
+                            <Link to={"/admin/author/" + author._id}>
                                 <Button style={{ backgroundColor: 'black', border: '0px solid black' }}><FaEdit /></Button>
                             </Link>
-                            <DeleteProductNotification data={product._id} />
+                            <DeleteAuthorNotification data={author._id} />
                         </td>
                     </tr>
                 )
@@ -109,16 +84,15 @@ class LibaryManagement extends Component {
         return result;
     }
     render() {
-        var { products } = this.state
+        var { authors } = this.state
         return (
             <div>
                 <SideBarManagement />
-                <div style={{ backgroundColor: '#01a14b' }}>
-                    <Card.Title style={{ color: 'white', fontSize: '23px' }}>QUẢN LÝ SÁCH</Card.Title>
-                </div>
-                <Card style={{ marginLeft: '5rem', maxWidth: '2000px', marginTop: '0px', backgroundColor: 'transparent' }}>
-
-                    <Container>
+                <Container style={{ marginLeft: '5rem', maxWidth: '2000px' }}>
+                    <div style={{ backgroundColor: '#01a14b' }}>
+                        <Card.Title style={{ color: 'white', fontSize: '23px' }}>QUẢN LÝ TÁC GIẢ</Card.Title>
+                    </div>
+                    <Card style={{ marginLeft: '5rem', maxWidth: '2000px', marginTop: '0px', backgroundColor: 'transparent' }}>
                         <div style={{ backgroundColor: 'white' }}>
                             <Link to="/admin/add_product">
                                 <Button variant="secondary" style={{ float: 'right', width: '5rem' }}> Thêm</Button>
@@ -126,20 +100,14 @@ class LibaryManagement extends Component {
                             <Table bordered hover style={{ backgroundColor: 'white', fontSize: '12px' }}>
                                 <thead>
                                     <tr>
-                                        <th style={{ fontSize: '13px' }}>Ảnh</th>
-                                        <th style={{ fontSize: '13px' }}>Tên sản phẩm</th>
-                                        <th style={{ fontSize: '13px' }}>Tác giả</th>
-                                        <th style={{ fontSize: '13px' }}>Nhà xuất bản</th>
-                                        <th style={{ fontSize: '13px' }}>Năm xuất bản</th>
-                                        <th style={{ fontSize: '13px' }}>Năm nhập sách</th>
-                                        <th style={{ fontSize: '13px' }}>Tag</th>
-                                        <th style={{ fontSize: '13px' }}>Tình trạng sách</th>
-                                        <th style={{ fontSize: '13px' }}>Số lần đã mượn</th>
-                                        <th style={{ fontSize: '13px' }}>Trạng thái mượn sách</th>
+                                        <th style={{ fontSize: '13px' }}>Họ và tên</th>
+                                        <th style={{ fontSize: '13px' }}>Giới thiệu</th>
+                                        <th style={{ fontSize: '13px' }}>Email</th>
+                                        <th style={{ fontSize: '13px' }}>SĐT</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {this.showProducts(products)}
+                                    {this.showAuthors(authors)}
                                 </tbody>
                             </Table>
                             <Row style={{ marginTop: '1rem', float: 'right' }}>
@@ -158,12 +126,11 @@ class LibaryManagement extends Component {
                                     disable={true} />
                             </Row>
                         </div>
-                    </Container>
-
-                </Card>
+                    </Card>
+                </Container>
             </div>
         )
     }
 }
 
-export default LibaryManagement;
+export default AuthorManagement;
