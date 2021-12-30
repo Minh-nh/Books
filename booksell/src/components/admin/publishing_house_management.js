@@ -98,7 +98,7 @@ class PublishingHouseManagement extends Component {
                     </div>
                     <Card style={{ marginLeft: '5rem', maxWidth: '2000px', marginTop: '0px', backgroundColor: 'transparent' }}>
                         <div style={{ backgroundColor: 'white' }}>
-                            <Link to="/admin/add_product">
+                            <Link to="/admin/add_publishing_house">
                                 <Button variant="secondary" style={{ float: 'right', width: '5rem' }}> Thêm</Button>
                             </Link>
                             <Table bordered hover style={{ backgroundColor: 'white', fontSize: '12px' }}>

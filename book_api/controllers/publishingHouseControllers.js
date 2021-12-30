@@ -11,6 +11,11 @@ const getPublishingHouse = asyncHandler(async (req, res) => {
     res.json(publishingHouse);
 });
 
+const addPublishingHouse = asyncHandler(async (req, res) => {
+    const publishingHouse = await PublishingHouse.create(req.body);
+    res.json(publishingHouse);
+});
+
 const deletePublishingHouse = asyncHandler(async (req, res) => {
     const publishingHouse = await PublishingHouse.findByIdAndDelete(req.params.id)
     if (publishingHouse) {
@@ -20,4 +25,4 @@ const deletePublishingHouse = asyncHandler(async (req, res) => {
     }
 });
 
-export { getPublishingHouseList, getPublishingHouse, deletePublishingHouse };
+export { getPublishingHouseList, getPublishingHouse, addPublishingHouse, deletePublishingHouse };

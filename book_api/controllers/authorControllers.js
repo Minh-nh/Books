@@ -11,6 +11,11 @@ const getAuthor = asyncHandler(async (req, res) => {
     res.json(author);
 });
 
+const addAuthor = asyncHandler(async (req, res) => {
+    const author = await Author.create(req.body);
+    res.json(author);
+});
+
 const deleteAuthor = asyncHandler(async (req, res) => {
     const author = await Author.findByIdAndDelete(req.params.id)
     if (author) {
@@ -20,4 +25,4 @@ const deleteAuthor = asyncHandler(async (req, res) => {
     }
 });
 
-export { getAuthorList, getAuthor, deleteAuthor };
+export { getAuthorList, getAuthor, addAuthor, deleteAuthor };

@@ -11,9 +11,9 @@ import AdminProductAdd from './components/admin/libary_management/product_add';
 import AuthorManagement from './components/admin/author_management';
 import PublishingHouseManagement from './components/admin/publishing_house_management';
 import AdminAuthorDetail from './components/admin/author_management/author_detail';
+import AdminAuthorAdd from './components/admin/author_management/author_add';
 import AdminPublishingHouseDetail from './components/admin/publishing_house_management/publishing_house_detail';
-
-
+import AdminPublishingHouseAdd from './components/admin/publishing_house_management/publishing_house_add';
 
 const routes = [
     {
@@ -72,6 +72,11 @@ const routes = [
         main: ({ match }) => <AdminAuthorDetail match={match} />
     },
     {
+        path: '/admin/add_author',
+        exact: false,
+        main: () => <AdminAuthorAdd />
+    },
+    {
         path: '/admin/publishing_house_management',
         exact: false,
         main: () => <PublishingHouseManagement />
@@ -80,6 +85,11 @@ const routes = [
         path: '/admin/publishing_house/:id',
         exact: false,
         main: ({ match }) => <AdminPublishingHouseDetail match={match} />
+    },
+    {
+        path: '/admin/add_publishing_house',
+        exact: false,
+        main: () => <AdminPublishingHouseAdd />
     },
 ];
 

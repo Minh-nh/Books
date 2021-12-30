@@ -80,8 +80,7 @@ class AdminProductAdd extends Component {
         return result;
     }
 
-    onAdd = () => {
-        var { product } = this.state
+    onAdd = (product) => {
         axios({
             method: 'POST',
             url: 'http://localhost:5000/api/products/add',
@@ -97,7 +96,10 @@ class AdminProductAdd extends Component {
     onChange = (e) => {
         var target = e.target;
         var name = target.name;
-        var value = target.value.toUpperCase();
+        var value = target.value;
+        if (name !== "picture") {
+            value = value.toUpperCase();
+        }
         if (name === "author") {
             var { authors } = this.state;
             authors.map((author, index) => {
@@ -128,7 +130,6 @@ class AdminProductAdd extends Component {
     render() {
         var { product, authors, publishing_houses } = this.state
         const { history } = this.props;
-        console.log(product)
         return (
             (history) ?
                 <Container style={{ marginTop: '1rem' }}>
@@ -149,7 +150,7 @@ class AdminProductAdd extends Component {
                                 <Link to="/admin/library_management">
                                     <Button style={{ float: 'right', marginTop: '1rem', width: "7rem" }}>Huỷ</Button>
                                 </Link>
-                                <Button style={{ float: 'right', marginTop: '1rem', width: "7rem" }} onClick={() => this.onAdd()}>Xác nhận</Button>
+                                <Button style={{ float: 'right', marginTop: '1rem', width: "7rem" }} onClick={() => this.onAdd(product)}>Xác nhận</Button>
                             </Col>
                             <Col sm={6}>
                                 <Table striped bordered hover>
