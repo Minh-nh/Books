@@ -43,10 +43,10 @@ class Cart extends Component {
                                         {product.status}
                                     </Card.Text>
                                     <Card.Text>
-                                        {"Tác giả: " + product.author}
+                                        {"Tác giả: " + product.author?.name}
                                     </Card.Text>
                                     <Card.Text>
-                                        {"Nhà xuất bản: " + product.publishing_house}
+                                        {"Nhà xuất bản: " + product.publishing_house?.name}
                                     </Card.Text>
                                     <Button style={{ float: 'right', width: '8rem', height: '3.5rem', background: 'green' }} onClick={() => this.onDeleteItem(index, cart)}>Xoá</Button>
                                 </Col>

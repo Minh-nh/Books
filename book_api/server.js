@@ -8,6 +8,7 @@ import productRoutes from "./routes/productRoutes.js";
 import librarianRoutes from "./routes/librarianRoutes.js"
 import pubshingHouseRoutes from "./routes/publishingHouseRoutes.js"
 import authorRoutes from "./routes/authorRoutes.js"
+import borrowedTicketRoutes from "./routes/borrowedTicketRoutes.js"
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.use("/api/products", productRoutes)
 app.use("/api/librarians", librarianRoutes)
 app.use("/api/publishing_houses", pubshingHouseRoutes)
 app.use("/api/authors", authorRoutes)
+app.use("/api/borrowed_ticketes", borrowedTicketRoutes)
 
 const PORT = process.env.PORT || 5000;
 

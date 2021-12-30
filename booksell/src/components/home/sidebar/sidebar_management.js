@@ -42,6 +42,13 @@ class SideBarManagement extends Component {
                                         <span className="nav-text">Quản lý nhà xuất bản</span>
                                     </Link>
                                 </li>
+                                <li onClick={() => this.setActive("Xe")}>
+                                    <Link to="/admin/borrowed_ticket_management">
+                                        <i className="fa fa-file fa-lg" />
+                                        <span className="nav-text">Quản lý phiếu mượn</span>
+                                    </Link>
+                                </li>
+                                
                             </ul>
                         </div>
                     </nav>

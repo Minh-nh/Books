@@ -14,6 +14,7 @@ import AdminAuthorDetail from './components/admin/author_management/author_detai
 import AdminAuthorAdd from './components/admin/author_management/author_add';
 import AdminPublishingHouseDetail from './components/admin/publishing_house_management/publishing_house_detail';
 import AdminPublishingHouseAdd from './components/admin/publishing_house_management/publishing_house_add';
+import BorrowedTicketManagement from './components/admin/borrowed_ticket_management';
 
 const routes = [
     {
@@ -90,6 +91,11 @@ const routes = [
         path: '/admin/add_publishing_house',
         exact: false,
         main: () => <AdminPublishingHouseAdd />
+    },
+    {
+        path: '/admin/borrowed_ticket_management',
+        exact: false,
+        main: () => <BorrowedTicketManagement />
     },
 ];
 

@@ -10,14 +10,16 @@ class ProductDetail extends Component {
         super(props);
         this.state = {
             product: {
-                tag:[]
+                tag: []
             },
-            cart: []
+            cart: [],
+            librarian: {}
         }
     }
 
     componentDidMount() {
         var cart = reactLocalStorage.getObject('cart');
+        var librarian = reactLocalStorage.getObject('librarian');
         axios({
             method: 'GET',
             url: 'http://localhost:5000/api/products/' + this.props.match.params.id,
@@ -25,7 +27,8 @@ class ProductDetail extends Component {
         }).then(res => {
             this.setState({
                 product: res.data,
-                cart
+                cart,
+                librarian
             });
         }).catch(err => {
             console.log(err);
@@ -41,8 +44,11 @@ class ProductDetail extends Component {
     }
 
 
-    onCheckInCard(product, cart) {
+    onCheckInCard(product, cart, librarian) {
         var result = false;
+        if (!librarian.name) {
+            result = true
+        }
         if (cart.length > 0) {
             cart.map((c, index) => {
                 if (c._id === product._id || !product.state)
@@ -69,8 +75,7 @@ class ProductDetail extends Component {
 
 
     render() {
-        var { product, cart } = this.state
-        console.log(product)
+        var { product, cart, librarian } = this.state
         return (
             <div>
                 <Navbar />
@@ -98,7 +103,7 @@ class ProductDetail extends Component {
                                         </Col>
                                     </Row>
                                     <div >
-                                        <button class="add-to-cart btn btn-default" disabled={this.onCheckInCard(product, cart)} type="button" onClick={() => this.onAddCart(product)}>Mượn sách</button>
+                                        <button class="add-to-cart btn btn-default" disabled={this.onCheckInCard(product, cart, librarian)} type="button" onClick={() => this.onAddCart(product)}>Mượn sách</button>
                                     </div>
                                 </div>
                             </div>

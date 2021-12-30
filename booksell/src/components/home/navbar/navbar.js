@@ -34,7 +34,7 @@ class Navbar extends Component {
         })
     }
 
-    onLogout(){
+    onLogout() {
         reactLocalStorage.setObject('librarian', {});
         reactLocalStorage.setObject('cart', []);
     }
@@ -52,8 +52,8 @@ class Navbar extends Component {
                         </div>
                         <div className="col-sm-5 col-xs-12">
                             <div className="topbar-info">
-                                <div className="taikhoan" style={{width:'35rem'}}>
-                                    {librarian.name ? <Row > 
+                                <div className="taikhoan" style={{ width: '35rem' }}>
+                                    {librarian.name ? <Row >
                                         <Col><p>{librarian.name}</p></Col>
                                         <Col><Link to="/login" onClick={() => this.onLogout()}>Đăng Xuất </Link></Col>
                                     </Row> : <Link to="/login">Đăng nhập </Link>}
@@ -68,8 +68,10 @@ class Navbar extends Component {
                     <Link to="/" className="logo"> <FaBook /> BookLy </Link>
                     <SearchBar placeholder="Enter a Book Name..." data={products} />
                     <div class="icons" style={{ display: 'flex;' }}>
-                        <Link to="/cart"><FaClipboard /></Link>
-                        <Link to="/admin/library_management"><FaUser /></Link>
+                        {librarian.name ?
+                            <Link to="/cart"><FaClipboard /></Link> : null}
+                        {librarian.name ?
+                            <Link to="/admin/library_management"><FaUser /></Link> : null}
                     </div>
                 </div>
                 <div className="header-2">

@@ -5,6 +5,7 @@ import NavBar from '../home/navbar/navbar';
 import axios from "axios";
 import { reactLocalStorage } from 'reactjs-localstorage';
 import { withRouter } from 'react-router-dom';
+import FailLoginNotification from '../home/notification/fail_login_notification';
 class Login extends Component {
 
 	constructor(props) {
@@ -12,6 +13,7 @@ class Login extends Component {
 		this.state = {
 			username: "",
 			password: "",
+			show: false
 		}
 	}
 
@@ -24,11 +26,13 @@ class Login extends Component {
 			data: null
 		}).then(res => {
 			if (res.data === null) {
-				
+				this.setState({
+					show: true
+				})
 			} else {
-				var person={
-					_id:res.data._id,
-					name:res.data.name
+				var person = {
+					_id: res.data._id,
+					name: res.data.name
 				}
 				reactLocalStorage.setObject('librarian', person);
 				if (history) history.push('/');
@@ -48,8 +52,15 @@ class Login extends Component {
 		})
 	}
 
+	onShow = () => {
+		this.setState({
+			show: false
+		})
+	}
+
 	render() {
 		const { history } = this.props;
+		var { show } = this.state
 		return (
 			(history)
 				? <div>
@@ -77,6 +88,7 @@ class Login extends Component {
 									</InputGroup>
 								</div>
 								<Button style={{ width: '16rem', height: "4rem", paddingTop: '2px', backgroundColor: "#01a14b", fontSize: '20px' }} onClick={this.redirectToHome}>Đăng nhập</Button>
+								<FailLoginNotification show={show} handleClose={this.onShow} />
 							</Card>
 						</div>
 					</Container>
