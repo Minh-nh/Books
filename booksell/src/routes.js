@@ -15,6 +15,7 @@ import AdminAuthorAdd from './components/admin/author_management/author_add';
 import AdminPublishingHouseDetail from './components/admin/publishing_house_management/publishing_house_detail';
 import AdminPublishingHouseAdd from './components/admin/publishing_house_management/publishing_house_add';
 import BorrowedTicketManagement from './components/admin/borrowed_ticket_management';
+import AdminBorrowedTicketDetail from './components/admin/borrowed_ticket_management/borrowed_ticket_detail';
 
 const routes = [
     {
@@ -96,6 +97,11 @@ const routes = [
         path: '/admin/borrowed_ticket_management',
         exact: false,
         main: () => <BorrowedTicketManagement />
+    },
+    {
+        path: '/admin/borrowed_ticket/:id',
+        exact: false,
+        main: ({ match }) => <AdminBorrowedTicketDetail match={match} />
     },
 ];
 

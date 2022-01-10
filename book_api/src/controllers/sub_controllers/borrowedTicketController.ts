@@ -30,7 +30,7 @@ export default class BorrowedTicketController implements Controller {
         } else {
             res.status(404).json({ message: "Error" })
         }
-       
+
         return;
     }
 
@@ -41,7 +41,7 @@ export default class BorrowedTicketController implements Controller {
         } else {
             res.status(404).json({ message: "Borrowed ticket not found" })
         }
-        
+
         return;
     }
 }

@@ -60,6 +60,18 @@ class BorrowedTicketManagement extends Component {
         })
 
     }
+    onPayBook = (borrow) => {
+        // axios({
+        //     method: 'UPDATE',
+        //     url: 'http://localhost:5000/api/borrowed_ticketes/update',
+        //     data: borrow
+        // }).then(res => {
+        //     // const { history } = this.props;
+        //     // if (history) history.push('/');
+        // }).catch(err => {
+        //     console.log(err);
+        // })
+    }
 
     showBorrowedTicketes(borrowed_ticketes) {
         var result = null;
@@ -75,7 +87,11 @@ class BorrowedTicketManagement extends Component {
                         <td>{borrowed_ticket.phone_reader}</td>
                         <td>{borrowed_ticket.date_borrowing}</td>
                         <td>{borrowed_ticket.out_of_date}</td>
-                        <td>{borrowed_ticket.state?"ĐÃ TRẢ SÁCH":"CHƯA TRẢ SÁCH"}</td>
+                        <td>
+                            <Button style={{ backgroundColor: 'black', border: '0px solid black' }} disabled={borrowed_ticket.state} onClick={() => this.onPayBook(borrowed_ticket)}>
+                                {borrowed_ticket.state ? "ĐÃ TRẢ SÁCH" : "CHƯA TRẢ SÁCH"}
+                            </Button>
+                        </td>
                         <td style={{ display: 'flex', justifyContent: 'space-around' }}>
                             <Link to={"/admin/borrowed_ticket/" + borrowed_ticket._id}>
                                 <Button style={{ backgroundColor: 'black', border: '0px solid black' }}><FaEdit /></Button>

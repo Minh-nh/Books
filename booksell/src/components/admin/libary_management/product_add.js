@@ -133,78 +133,82 @@ class AdminProductAdd extends Component {
         return (
             (history) ?
                 <Container style={{ marginTop: '1rem' }}>
-                    <Card.Title style={{ fontSize: '24px', marginLeft: '2.5%' }}>THÊM SÁCH</Card.Title>
+                    <Card style={{ backgroundColor: 'white', padding: '0px' }}>
+                        <Card.Title style={{ color: 'white', fontSize: '24px', backgroundColor: 'green', height: '5rem', padding: '1rem' }}>THÊM SÁCH</Card.Title>
+                        <Container style={{ margin: 'auto', padding: '2rem', marginTop: '2rem' }}>
+                            <Row>
+                                <Col style={{ margin: 'auto' }} sm={6}>
+                                    <Container>
+                                        <img style={{ width: '30rem', marginLeft: '15rem' }} src={product.picture} alt="Ảnh sách"
+                                            width="75%"
+                                            height="75%"
+                                        />
+                                    </Container>
+                                    <Form style={{ marginTop: '1rem' }}>
+                                        <Form.Control style={{ width: '30rem', marginLeft: '16.5rem' }} name="picture" type="input" placeholder="URL" onChange={this.onChange} />
+                                    </Form>
 
-                    <Container style={{ margin: 'auto', padding: '2rem', marginTop: '2rem' }}>
-                        <Row>
-                            <Col sm={6}>
-                                <Container>
-                                    <img src={product.picture} alt="Ảnh sách"
-                                        width="75%"
-                                        height="75%"
-                                    />
-                                </Container>
-                                <Form style={{ marginTop: '1rem' }}>
-                                    <Form.Control name="picture" type="input" placeholder="URL" onChange={this.onChange} />
-                                </Form>
-                                <Link to="/admin/library_management">
-                                    <Button style={{ float: 'right', marginTop: '1rem', width: "7rem" }}>Huỷ</Button>
-                                </Link>
-                                <Button style={{ float: 'right', marginTop: '1rem', width: "7rem" }} onClick={() => this.onAdd(product)}>Xác nhận</Button>
-                            </Col>
-                            <Col sm={6}>
-                                <Table striped bordered hover>
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>1</td>
-                                            <td style={{ padding: '5px' }}>Tên sách</td>
-                                            <td style={{ padding: '0px' }}><Form.Control style={{ width: '100%', textTransform: "uppercase" }} name="name" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>2</td>
-                                            <td style={{ padding: '5px' }}>Tác giả</td>
-                                            <Form.Control name="author" onChange={this.onChange} style={{ fontSize: '12px' }} as="select">
-                                                {this.showAuthors(authors)}
-                                            </Form.Control>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>3</td>
-                                            <td style={{ padding: '5px' }}>Nhà xuất bản</td>
-                                            <Form.Control name="publishing_house" onChange={this.onChange} style={{ fontSize: '12px' }} as="select">
-                                                {this.showPublishingHouses(publishing_houses)}
-                                            </Form.Control>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>4</td>
-                                            <td style={{ padding: '5px' }}>Năm xuất bản</td>
-                                            <td style={{ padding: '0px' }}><Form.Control style={{ width: '100%', textTransform: "uppercase" }} name="publish_year" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>5</td>
-                                            <td style={{ padding: '5px' }}>Năm mua</td>
-                                            <td style={{ padding: '0px' }}><Form.Control style={{ width: '100%', textTransform: "uppercase" }} name="buy_year" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>6</td>
-                                            <td style={{ padding: '5px' }}>Thể loại</td>
-                                            <td style={{ padding: '0px' }}><Form.Control style={{ width: '100%', textTransform: "uppercase" }} name="tag" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
-                                        </tr>
-                                        <tr className="tr-edit">
-                                            <td style={{ padding: '5px' }}>7</td>
-                                            <td style={{ padding: '5px' }}>Tình trạng</td>
-                                            <td style={{ padding: '0px' }}><Form.Control style={{ width: '100%', textTransform: "uppercase" }} name="status" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
-                                        </tr>
-                                    </tbody>
-                                </Table>
-                            </Col>
-                        </Row>
-                    </Container>
+                                </Col>
+                                <Col style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}} sm={6}>
+                                    <Table striped bordered hover>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>1</td>
+                                                <td style={{ padding: '5px' }}>Tên sách</td>
+                                                <td style={{ padding: '0px' }}><Form.Control style={{ height: '3rem', width: '100%', textTransform: "uppercase" }} name="name" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>2</td>
+                                                <td style={{ padding: '5px' }}>Tác giả</td>
+                                                <Form.Control name="author" onChange={this.onChange} style={{ height: '3rem', fontSize: '12px' }} as="select">
+                                                    {this.showAuthors(authors)}
+                                                </Form.Control>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>3</td>
+                                                <td style={{ padding: '5px' }}>Nhà xuất bản</td>
+                                                <Form.Control name="publishing_house" onChange={this.onChange} style={{ height: '3rem', fontSize: '12px' }} as="select">
+                                                    {this.showPublishingHouses(publishing_houses)}
+                                                </Form.Control>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>4</td>
+                                                <td style={{ padding: '5px' }}>Năm xuất bản</td>
+                                                <td style={{ padding: '0px' }}><Form.Control style={{ height: '3rem', width: '100%', textTransform: "uppercase" }} name="publish_year" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>5</td>
+                                                <td style={{ padding: '5px' }}>Năm mua</td>
+                                                <td style={{ padding: '0px' }}><Form.Control style={{ height: '3rem', width: '100%', textTransform: "uppercase" }} name="buy_year" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>6</td>
+                                                <td style={{ padding: '5px' }}>Thể loại</td>
+                                                <td style={{ padding: '0px' }}><Form.Control style={{ height: '3rem', width: '100%', textTransform: "uppercase" }} name="tag" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
+                                            </tr>
+                                            <tr className="tr-edit">
+                                                <td style={{ padding: '5px' }}>7</td>
+                                                <td style={{ padding: '5px' }}>Tình trạng</td>
+                                                <td style={{ padding: '0px' }}><Form.Control style={{ height: '3rem', width: '100%', textTransform: "uppercase" }} name="status" size="sm" type="text" placeholder="Nhập vào" onChange={this.onChange} /></td>
+                                            </tr>
+                                        </tbody>
+                                    </Table>
+                                    <div>
+                                        <Link to="/admin/library_management">
+                                            <Button style={{ float: 'right', marginTop: '1rem', width: "10rem",height:'3rem',backgroundColor:'#121212' }}>Huỷ</Button>
+                                        </Link>
+                                        <Button style={{ float: 'right', marginTop: '1rem', width: "10rem",height:'3rem' ,backgroundColor:'#121212'}} onClick={() => this.onAdd(product)}>Xác nhận</Button>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Card>
                 </Container >
                 : null)
     }
