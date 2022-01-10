@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "61cd68f9ddf8b139f9220f81"
+  },
+  "librarian": {
+    "$oid": "61c9799c0e7d99d599793925"
+  },
+  "CMND_reader": "070099993333",
+  "name_reader": "NGUYỄN VĂN A",
+  "email_reader": "VANA@GMAIL.COM",
+  "phone_reader": "0903003307",
+  "array_books": [
+    {
+      "$oid": "61bc7d428fe0030df8b29a19"
+    },
+    {
+      "$oid": "61cbf7a4f1cd4b0b12336b05"
+    }
+  ],
+  "date_borrowing": "24/12/2021",
+  "out_of_date": "01/01/2022",
+  "state": true
+}]
